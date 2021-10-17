@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="fragments/parts :: meta(${title}, 'single_styles.css')"></head>
+    <body>
+        <header th:replace="fragments/parts :: top"></header>
+
+        <h1 th:text="${header}"></h1>
+        <ul>
+            <li>Name: <span th:text="${lang.name}"></span></li>
+            <p>Hello world!!!</p>
+        </ul>
+
+        <footer th:replace="fragments/parts :: bottom"></footer>
+    </body>
+</html>
